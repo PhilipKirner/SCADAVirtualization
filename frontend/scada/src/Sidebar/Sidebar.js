@@ -1,41 +1,28 @@
 import {Card, Col} from "react-bootstrap";
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SidebarCard from "./SidebarCard.js";
 
 export default class Sidebar extends React.Component {
     render(){
     return(
         <div>
-            <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                    Linked PLC's
-                    <hr/>
-                </Card.Body>
-            </Card>
-            <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                    Connection Errors
-                    <hr/>
-                </Card.Body>
-            </Card>
-            <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                    Rechard Events
-                    <hr/>
-                </Card.Body>
-            </Card>
-            <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                    Send Commands
-                    <hr/>
-                </Card.Body>
-            </Card>
-            <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                    Error Logs
-                    <hr/>
-                </Card.Body>
-            </Card>
+            <SidebarCard title={"Linked PLC's"}>
+                infoList
+            </SidebarCard>
+            <SidebarCard title={"Connection Errors"}>
+                infoList
+            </SidebarCard>
+            <SidebarCard title={"Rechard Events"}>
+                infoList
+            </SidebarCard>
+            <SidebarCard title={"Send Commands"}>
+                infoList
+            </SidebarCard>
+            <SidebarCard title={"Error Logs"}>
+                infoList
+            </SidebarCard>
+
         </div>
 )
 }
