@@ -3,6 +3,8 @@ import './App.css';
 import mockup from './GasBoisMockup.PNG';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col, Card, CardColumns} from 'react-bootstrap';
+import Sidebar from "./Sidebar/Sidebar.js";
+import MainDisplay from "./MainDisplay/MainDisplay.js";
 
 function App() {
   return (
@@ -15,64 +17,10 @@ function App() {
         <Container>
           <Row>
             <Col>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  Linked PLC's
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  Connection Errors
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  Rechard Events
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  Send Commands
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  Error Logs
-                  <hr/>
-                </Card.Body>
-              </Card>
+              <Sidebar/>
             </Col>
             <Col xs={8}>
-              <CardColumns>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  PLC
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  PLC
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Body>
-                  PLC
-                  <hr/>
-                </Card.Body>
-              </Card>
-              <Card bg={'secondary'} text={'light'}>
-                <Card.Title>PLC<hr/></Card.Title>
-                <Card.Body>
-
-                </Card.Body>
-              </Card>
-              </CardColumns>
+              <MainDisplay/>
             </Col>
           </Row>
         </Container>
