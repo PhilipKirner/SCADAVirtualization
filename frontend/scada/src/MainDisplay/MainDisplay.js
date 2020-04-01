@@ -4,19 +4,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PLC from "./PLC.js";
 
 export default class MainDisplay extends React.Component {
+    constructor(props){
+        super(props)
+        this.list = new Array(10)
+        for (let i = 1; i < 13; i++){
+            this.list.push(i)
+        }
+    }
     render(){
         return (
             <div>
                 <CardColumns >
-                    <PLC gaugeID={"gauge1"}/>
-                    <PLC gaugeID={"gauge2"}/>
-                    <PLC gaugeID={"gauge3"}/>
-                    <PLC gaugeID={"gauge4"}/>
-                    <PLC gaugeID={"gauge5"}/>
-                    <PLC gaugeID={"gauge6"}/>
-                    <PLC gaugeID={"gauge7"}/>
-                    <PLC gaugeID={"gauge8"}/>
-                    <PLC gaugeID={"gauge9"}/>
+                    {this.list.map((number) => <PLC PLCID={number} gaugeID={"gauge"+number}/>)}
                 </CardColumns>
             </div>
 

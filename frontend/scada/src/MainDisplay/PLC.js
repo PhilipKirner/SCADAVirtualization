@@ -20,7 +20,7 @@ export default class PLC extends React.Component {
         return (
             <Card bg={'secondary'} text={'light'}>
                 <Card.Title>
-                    PLC
+                    PLC {this.props.PLCID}
                     <hr/>
                 </Card.Title>
                 <Card.Body>
