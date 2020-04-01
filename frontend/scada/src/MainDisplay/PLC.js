@@ -2,10 +2,7 @@ import {Card, Col, Row} from "react-bootstrap";
 import React from "react";
 import PLC_CONTROLS from "./PLC_Controls.js";
 import ConnectionStatus from "./ConnectionStatus.js";
-import GaugeChart from "react-gauge-chart";
 import PressureTemp from "./PressureTemp.js"
-import Thermometer from "react-thermometer-chart";
-import Bulb from "react-bulb";
 
 export default class PLC extends React.Component {
 
