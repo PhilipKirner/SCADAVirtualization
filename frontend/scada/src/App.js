@@ -19,7 +19,7 @@ function App() {
             <Col>
               <Sidebar/>
             </Col>
-            <Col xs={8}>
+            <Col xs={9}>
               <MainDisplay/>
             </Col>
           </Row>
