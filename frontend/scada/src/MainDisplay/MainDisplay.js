@@ -10,11 +10,14 @@ export default class MainDisplay extends React.Component {
         for (let i = 1; i < 13; i++){
             this.list.push(i)
         }
+        this.columnStyle = {
+            columnCount: 2,
+        }
     }
     render(){
         return (
             <div>
-                <CardColumns >
+                <CardColumns style={this.columnStyle}>
                     {this.list.map((number) => <PLC PLCID={number} gaugeID={"gauge"+number}/>)}
                 </CardColumns>
             </div>

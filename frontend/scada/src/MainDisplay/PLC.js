@@ -1,20 +1,13 @@
 import {Card, Col, Row} from "react-bootstrap";
 import React from "react";
-import Thermometer from "react-thermometer-chart";
+import PLC_CONTROLS from "./PLC_Controls.js";
+import ConnectionStatus from "./ConnectionStatus.js";
 import GaugeChart from "react-gauge-chart";
+import PressureTemp from "./PressureTemp.js"
+import Thermometer from "react-thermometer-chart";
 import Bulb from "react-bulb";
 
 export default class PLC extends React.Component {
-
-    constructor(props){
-        super(props)
-        this.chartStyle = {
-            height: 70,
-        }
-        this.fontStyle = {
-            fontSize: ".4em",
-        }
-    }
 
     render() {
         return (
@@ -25,34 +18,15 @@ export default class PLC extends React.Component {
                 </Card.Title>
                 <Card.Body>
                     <Row xs={12}>
-                        <Col xs={8}>
-                            <GaugeChart id={this.props.gaugeID} style={this.chartStyle} />
+                        <Col xs={7}>
+                            <PressureTemp gaugeID={this.props.gaugeID} />
                         </Col>
-                        <Col xs={4}>
-                            <Thermometer width="100%" height="61px"/>
-                        </Col>
-                    </Row>
-                    <Row xs={12} style={this.fontStyle}>
-                        <Col>
-                            Error
-                            <Bulb
-                                size={10}
-                                color="black"
-                            />
-                        </Col>
-                        <Col xs={6}>
-                            {""}
-                        </Col>
-                        <Col>
-                            Error
-                            <Bulb
-                                size={10}
-                                color="white"
-                            />
+                        <Col xs={5}>
+                            <PLC_CONTROLS/>
                         </Col>
                     </Row>
                     <Row xs={12}>
-
+                        <ConnectionStatus/>
                     </Row>
                 </Card.Body>
             </Card>

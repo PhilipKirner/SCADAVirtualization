@@ -7,6 +7,10 @@ import Sidebar from "./Sidebar/Sidebar.js";
 import MainDisplay from "./MainDisplay/MainDisplay.js";
 
 function App() {
+  const style = {
+    width: "98%",
+    maxWidth: "none",
+  }
   return (
 
     <div className="App">
@@ -14,12 +18,12 @@ function App() {
       <header className="App-header">
         <h1>GasBois, Check your Gas!</h1>
         <img src={mockup} alt="it looks like this." />
-        <Container>
+        <Container style={style}>
           <Row>
             <Col>
               <Sidebar/>
             </Col>
-            <Col xs={9}>
+            <Col xs={10}>
               <MainDisplay/>
             </Col>
           </Row>
