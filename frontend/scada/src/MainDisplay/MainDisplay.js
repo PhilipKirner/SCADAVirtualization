@@ -7,7 +7,7 @@ export default class MainDisplay extends React.Component {
     constructor(props){
         super(props)
         this.list = new Array(10)
-        for (let i = 1; i < 13; i++){
+        for (let i = 1; i < 7; i++){
             this.list.push(i)
         }
         this.columnStyle = {

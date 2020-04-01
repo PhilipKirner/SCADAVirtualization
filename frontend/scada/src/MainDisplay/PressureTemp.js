@@ -20,11 +20,11 @@ export default class PressureTemp extends React.Component {
         return (
             <div>
                 <Row xs={12}>
-                    <Col xs={8}>
+                    <Col xs={9}>
                         <GaugeChart id={this.props.gaugeID} style={this.chartStyle}/>
                     </Col>
-                    <Col xs={4}>
-                        <Thermometer width="100%" height="61px"/>
+                    <Col xs={3}>
+                        <Thermometer width="100%" height="120px"/>
                     </Col>
                 </Row>
                 <Row xs={12} style={this.fontStyle}>
@@ -35,7 +35,7 @@ export default class PressureTemp extends React.Component {
                             color="black"
                         />
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={7}>
                         {""}
                     </Col>
                     <Col>

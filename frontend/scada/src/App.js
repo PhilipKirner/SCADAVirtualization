@@ -40,6 +40,30 @@ function App() {
         >
           This is a completed SCADA Wireframe, we can all go back to bed now.
         </a>
+        <a
+            className="App-link"
+            href="https://www.npmjs.com/package/react-thermometer-chart"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+          This is the Temperature Widget
+        </a>
+        <a
+            className="App-link"
+            href="https://www.npmjs.com/package/react-gauge-chart"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+          This is the Pressure Widget
+        </a>
+        <a
+            className="App-link"
+            href="https://www.npmjs.com/package/react-bulb"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+          This is the Indicator Bulb Widget
+        </a>
       </header>
     </div>
   );
