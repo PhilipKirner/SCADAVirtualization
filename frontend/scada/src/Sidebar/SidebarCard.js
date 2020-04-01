@@ -1,11 +1,8 @@
-import {Card, Col} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Sidebar extends React.Component {
-    constructor(props){
-        super(props)
-    }
 
     render() {
         return (

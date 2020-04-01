@@ -1,4 +1,4 @@
-import {Card, Col} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarCard from "./SidebarCard.js";
@@ -6,7 +6,7 @@ import SidebarCard from "./SidebarCard.js";
 export default class Sidebar extends React.Component {
     render(){
     return(
-        <div>
+        <Container>
             <SidebarCard title={"Linked PLC's"}>
                 infoList
             </SidebarCard>
@@ -23,7 +23,7 @@ export default class Sidebar extends React.Component {
                 infoList
             </SidebarCard>
 
-        </div>
+        </Container>
 )
 }
 }

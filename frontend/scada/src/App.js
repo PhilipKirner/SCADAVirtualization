@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import mockup from './GasBoisMockup.PNG';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Row, Col, Card, CardColumns} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import Sidebar from "./Sidebar/Sidebar.js";
 import MainDisplay from "./MainDisplay/MainDisplay.js";
 

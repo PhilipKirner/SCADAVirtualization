@@ -1,4 +1,4 @@
-import {Card, CardColumns, Col} from "react-bootstrap";
+import {CardColumns} from "react-bootstrap";
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PLC from "./PLC.js";
