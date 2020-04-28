@@ -2,17 +2,14 @@ import {Container, Card, Col, Row, Button} from "react-bootstrap";
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 import React from "react";
 import Bulb from "react-bulb";
+import GasValveSwitch from "./GasValveSwitch";
 
 function renderButtons (numberOfButtons){
     const views = [];
     
     for (var i = 0; i < numberOfButtons; i++){
         views.push(
-                <BootstrapSwitchButton 
-                    checked={false} 
-                    onstyle="success" 
-                    offstyle="danger"
-                    size="sm"
+                <GasValveSwitch
                     key={"switchButton"+i}
                 />
         );

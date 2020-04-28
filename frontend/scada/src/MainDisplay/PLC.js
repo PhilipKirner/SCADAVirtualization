@@ -1,7 +1,7 @@
 import {Card, Col, Row, Container} from "react-bootstrap";
 import ReactDOM from 'react-dom';
 import React from "react";
-import PLC_CONTROLS from "./PLC_Controls.js";
+import PLC_CONTROLS from "./PLC_Controls/PLC_Controls.js";
 import ConnectionStatus from "./ConnectionStatus.js";
 import PressureTemp from "./PressureTemp.js"
 import Thermometer from "react-thermometer-component";
