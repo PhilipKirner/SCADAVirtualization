@@ -21,7 +21,8 @@ export default class MainDisplay extends React.Component {
                 <CardColumns style={this.columnStyle}>
                     {this.list.map((number) => <PLC 
                                                 PLCID={number} 
-                                                gaugeID={"gauge"+number} 
+                                                gaugeID={"gauge"+number}
+                                                key={"gauge" + number}
                                                 />)}
                 </CardColumns>
             </div>

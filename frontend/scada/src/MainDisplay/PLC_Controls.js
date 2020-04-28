@@ -13,6 +13,7 @@ function renderButtons (numberOfButtons){
                     onstyle="success" 
                     offstyle="danger"
                     size="sm"
+                    key={"switchButton"+i}
                 />
         );
     }
@@ -24,7 +25,7 @@ export default class PLC_Controls extends React.Component {
     render() {
 
         return (
-            <div class="mx-auto">
+            <div className="mx-auto">
                 <Card border="warning" bg={'secondary'} text={'light'}>
                     <Card.Title>
                         PLC Controls
