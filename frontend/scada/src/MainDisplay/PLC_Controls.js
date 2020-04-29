@@ -3,24 +3,52 @@ import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 import React from "react";
 import Bulb from "react-bulb";
 
-function renderButtons (numberOfButtons){
+/* renderButtons (numberOfButtons, buttonState){
     const views = [];
     
     for (var i = 0; i < numberOfButtons; i++){
         views.push(
                 <BootstrapSwitchButton 
-                    checked={false} 
+                    checked={buttonState} 
                     onstyle="success" 
                     offstyle="danger"
                     size="sm"
                     key={"switchButton"+i}
+                    onChange={(checked: boolean) => {
+                        this.setState((state) => {
+                            if(buttonState == true){
+                                return state.switch = false;
+                            }
+                        });
+                    }}
                 />
         );
     }
     return views;
-}
+} */
 
 export default class PLC_Controls extends React.Component {
+    state = {
+        switch: true
+    }
+
+    renderButtons (numberOfButtons, buttonState){
+        const views = [];
+        const checked = buttonState;
+        
+        for (var i = 0; i < numberOfButtons; i++){
+            views.push(
+                    <BootstrapSwitchButton 
+                        checked={true} 
+                        onstyle="success" 
+                        offstyle="danger"
+                        size="sm"
+                        key={"switchButton"+i}
+                    />
+            );
+        }
+        return views;
+    }
     
     render() {
 
@@ -33,10 +61,10 @@ export default class PLC_Controls extends React.Component {
                     <Card.Body>
                         <Container fluid={true}>
                             <Row>
-                                { renderButtons(4) }
+                                { this.renderButtons(4, this.state.switch) }
                             </Row>
                             <Row>
-                                { renderButtons(4) }
+                                { this.renderButtons(4) }
                             </Row>
                         </Container>
                     </Card.Body>
