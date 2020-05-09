@@ -1,10 +1,14 @@
 # SCADAVirtualization
 ### Hosting client
-* Navigate to /frontend/scada/
+* cd to /SCADAVirtualization/frontend/scada/
 * Run npm install
+* Run npm run electron
+
+or
+
 * Run npm run start
     * This will host the react web app
-* Run npm run electron
+
 
 IF YOU HAVE ISSUES WITH RUNNING ELECTRON:
 
