@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
     align-content: space-between;
+    width: 300px;
+}
+
+.row-cols-12{
+    width: 520px;
 }
 
 .indicators {
@@ -25,8 +30,10 @@
     align-content: space-between;
 }
 
-.indicator {
-
+.plcs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .errorTag {
@@ -37,10 +44,13 @@
     display: flex;
 }
 
-.row row-cols-12{
-    
+.plcControlsCard{
+    display: flex;
+    align-items: center;
+    width: 200px;
 }
 .col-5 {
+    width: 250px;
 }
 
 .pressure {
@@ -55,8 +65,10 @@
 
 .pressureRow {
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 140px;
+    width: 200px;
 }
 
 .temp {
@@ -69,4 +81,13 @@
 
 .thermo {
     height: 150px;
+}
+
+.switchRow{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
 }

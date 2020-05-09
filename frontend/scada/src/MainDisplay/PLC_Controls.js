@@ -3,6 +3,8 @@ import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 import React from "react";
 import Bulb from "react-bulb";
 
+import './plc.css';
+
 /* renderButtons (numberOfButtons, buttonState){
     const views = [];
     
@@ -53,18 +55,18 @@ export default class PLC_Controls extends React.Component {
     render() {
 
         return (
-            <div className="mx-auto">
-                <Card border="warning" bg={'secondary'} text={'light'}>
+            <div className="xs-auto">
+                <Card border="warning" bg={'secondary'} text={'warning'} >
                     <Card.Title>
                         PLC Controls
                     </Card.Title>
-                    <Card.Body>
+                    <Card.Body bsPrefix="plcControlsCard">
                         <Container fluid={true}>
-                            <Row>
-                                { this.renderButtons(4, this.state.switch) }
+                            <Row className="switchRow">
+                                { this.renderButtons(3, this.state.switch) }
                             </Row>
-                            <Row>
-                                { this.renderButtons(4) }
+                            <Row className="switchRow">
+                                { this.renderButtons(3) }
                             </Row>
                         </Container>
                     </Card.Body>

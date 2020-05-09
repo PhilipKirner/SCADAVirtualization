@@ -95,7 +95,8 @@ export default class PressureTemp extends React.Component {
 
     createGauges() {
         const chartStyle = {
-            height: 30,
+            height: 100,
+            width: 230
         }
         return <Row bsPrefix="gauges">
                         <Col bsPrefix="pressure">
@@ -141,7 +142,6 @@ export default class PressureTemp extends React.Component {
                                 WARNING
                             </Row>
                         </Col>  
-                    
                 </Row>;
     }
 
