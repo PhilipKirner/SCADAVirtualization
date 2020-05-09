@@ -3,8 +3,20 @@ import React from "react";
 import PLC_CONTROLS from "./PLC_Controls.js";
 import ConnectionStatus from "./ConnectionStatus.js";
 import PressureTemp from "./PressureTemp.js"
+import './plc.css';
+
 
 export default class PLC extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            chartStyle: {
+                height: 30
+            },
+        }
+
+    }
+
 
     render() {
         return (
@@ -13,17 +25,15 @@ export default class PLC extends React.Component {
                     PLC {this.props.PLCID}
                     <hr/>
                 </Card.Title>
-                <Card.Body>
+                <Card.Body bsPrefix="plcs">
                     <Row xs={12}>
-                        <Col xs={7}>
-                            <PressureTemp gaugeID={this.props.gaugeID} />
-                        </Col>
+                        <PressureTemp gaugeID={this.props.gaugeID}/>
                         <Col xs={5}>
                             <PLC_CONTROLS/>
                         </Col>
                     </Row>
                     <Row xs={12}>
-                        <ConnectionStatus/>
+                        <ConnectionStatus status={"Connected"}/>
                     </Row>
                 </Card.Body>
             </Card>

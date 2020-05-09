@@ -9,15 +9,19 @@
   "author": "Brandt Reutimann",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "bootstrap-switch-button-react": "^1.2.0",
     "react-bootstrap": "^1.0.0",
+    "react-bulb": "0.0.2",
     "react-gauge-chart": "^0.2.5",
     "react-thermometer-chart": "^1.0.2",
+    "react-thermometer-component": "^1.0.1",
+    "reactjs-popup": "^1.5.0",
     "reactstrap": "^8.4.1"
   },
   "main": "src/electron-starter.js",
   "scripts": {
-    "start": "react-scripts start",
-    "electron": "electron .",
+    "start": "BROWSER=none react-scripts start",
+    "electron": "(npm run start) & electron ./src/electron-starter.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

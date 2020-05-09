@@ -1,10 +1,15 @@
 import React from "react";
 import {Container} from "react-bootstrap";
+import './plc.css';
 
-export default class ConnectionsStatus extends React.Component{
+export default class ConnectionStatus extends React.Component{
     render(){
+        const className = "connectionStatus" + this.props.status;
         return(
-            <Container>ConnectionStatus</Container>
+            <div className={className} >
+                { this.props.status }
+            </div>   
+            
         )
     }
 }

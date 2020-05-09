@@ -9,7 +9,7 @@ function App() {
   const style = {
     width: "98%",
     maxWidth: "none",
-  }
+  };
   return (
 
     <div className="App">

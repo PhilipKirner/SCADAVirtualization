@@ -3,6 +3,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PLC from "./PLC.js";
 
+
 export default class MainDisplay extends React.Component {
     constructor(props){
         super(props)
@@ -18,7 +19,11 @@ export default class MainDisplay extends React.Component {
         return (
             <div>
                 <CardColumns style={this.columnStyle}>
-                    {this.list.map((number) => <PLC PLCID={number} gaugeID={"gauge"+number}/>)}
+                    {this.list.map((number) => <PLC 
+                                                PLCID={number} 
+                                                gaugeID={"gauge"+number}
+                                                key={"gauge" + number}
+                                                />)}
                 </CardColumns>
             </div>
 
