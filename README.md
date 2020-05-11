@@ -18,7 +18,7 @@ IF YOU HAVE ISSUES WITH RUNNING ELECTRON:
       
    Windows:
    
-      Open cmd as admin
+      Open Command Prompt
       cd to /SCADAVirtualization/frontend/scada
       run npm install electron
    
