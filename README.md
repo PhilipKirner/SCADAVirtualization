@@ -6,6 +6,8 @@
     * This will host the react web app
 * Run npm run electron
 
+IF THE ELECTRON WINDOW IS BLANK, WAIT FOR THE DEV SERVER TO START AND FINISH COMPILING AND THEN CLOSE AND RERUN.
+
 IF YOU HAVE ISSUES WITH RUNNING ELECTRON:
 
    cd into the directory: /SCADAVirtualization/frontend/scada
