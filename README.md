@@ -1,4 +1,5 @@
 # SCADAVirtualization
+![GUI](Dragster.jpg)
 ### Hosting client
 * Navigate to /frontend/scada/
 * Run npm install
